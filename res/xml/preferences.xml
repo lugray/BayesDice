@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto" >
+
+    <ca.ugray.SeekBarDialogPreference
+        android:defaultValue="0"
+        android:dialogMessage="Delay in milliseconds before the result is shown"
+        android:key="pref_delay"
+        android:max="100"
+        android:title="@string/pref_delay_title"
+        android:dialogTitle="@string/pref_delay_title"
+        custom:min="0"
+        custom:progressTextFunction="delayProgress" />
+    <ca.ugray.SeekBarDialogPreference
+        android:defaultValue="10"
+        android:dialogTitle="@string/pref_penalty_dialog_title"
+        android:key="pref_penalty"
+        android:max="20"
+        android:title="@string/pref_penalty_title"
+        custom:min="0"
+        custom:progressTextFunction="penaltyProgress" />
+
+</PreferenceScreen>
